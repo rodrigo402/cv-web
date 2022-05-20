@@ -1,9 +1,14 @@
 .portafolio{
     padding-top: 20px;
     padding-left: 15px;
+    padding-bottom: 10px;
 }
 .conten{
     padding-top: 15px;
+}
+.card-group{
+padding-bottom: 10px;
+
 }
 img{
     width: 320px;

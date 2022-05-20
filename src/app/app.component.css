@@ -1,27 +1,35 @@
-.row{
---bs-gutter-x: 0;
---bs-gutter-y: 0;
-}
 body{
     height: 100%;
+}
+.boton-menu{
+    display: none;
+}
+
+.sidebar{
+    width: 20%;
+    padding: 0;
+}
+.contenido{
+    width: 80%;
+    padding: 0;
 }
 
 
 @media only screen and (max-width: 600px){
+    .boton-menu{
+        display: block;
+        text-align: left;
+    }
     .sidebar{
-        width: 30%;
+        display: none;
+    }
+    .offcanvas-body{
+        padding: 3px;
     }
     .contenido{
-        width: 70%;
+        margin-top: 30px;
+        width: 100%;
     }
 
 
 }
-/* #menu-toggle {
-    display: block;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 15px;
-    padding: 5px;
-} */
-

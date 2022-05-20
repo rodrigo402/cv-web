@@ -1,11 +1,29 @@
+<div class="w-100 bg-dark fixed-top">
+  <button class="btn btn-dark boton-menu" type="button" data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+    class="bi bi-list"></i></button>
+</div>
 
-  <div class="row">
-    <div class="col-12 col-sm-3  sidebar">
-    <app-sidebar ></app-sidebar>
-    </div>
-    <div class="col-12 col-sm-9 contenido">
-      <router-outlet></router-outlet>
-    </div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-
+  <div class="offcanvas-body">
+    <app-sidebar></app-sidebar>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
   
+  <div class="contenido">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</div>
+
