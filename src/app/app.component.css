@@ -18,18 +18,24 @@ body{
 @media only screen and (max-width: 600px){
     .boton-menu{
         display: block;
-        text-align: left;
+        outline: none;
+        box-shadow: none;
+        
     }
+   
     .sidebar{
         display: none;
+        outline: none;
+    
     }
     .offcanvas-body{
-        padding: 3px;
+        padding: 2px;
     }
     .contenido{
         margin-top: 30px;
         width: 100%;
     }
+    
 
 
 }

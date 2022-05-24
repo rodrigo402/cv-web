@@ -4,19 +4,18 @@
     padding: 0px;
     width: 100%;
     height: 100%;
-    background-image: url(../../../assets/img/fondohome.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-attachment: fixed; */
-    background-size: cover;
 }
-.texto{
-    color: #fff;
+.texto{  
     text-align: center;
-    padding-top: 150px;
+    padding-top: 130px;
 }
-.textopersonal{
-    color: #fff;
+.textopersonal{    
     text-align: center;
     padding-top: 45px;
+}
+
+@media only screen and (max-width: 600px){
+    .texto{
+        padding-top: 60px;
+    }
 }
