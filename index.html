@@ -2,24 +2,83 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/cv-web/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rodrigo Reynoso — Analista de Sistemas, Front-end Developer & Sysadmin" />
+
+  <!-- Primary meta -->
+  <title>Rodrigo Reynoso — Flutter Developer · Fintech · Full Stack</title>
+  <meta name="description" content="Flutter Developer especializado en aplicaciones mobile para el sector fintech. Billeteras digitales white label, microservicios Laravel, CI/CD." />
   <meta name="author" content="Rodrigo Gabriel Reynoso" />
-  <title>Rodrigo Reynoso</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rodrigo402.github.io/cv-web/" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rodrigo402.github.io/cv-web/" />
+  <meta property="og:title" content="Rodrigo Reynoso — Flutter Developer" />
+  <meta property="og:description" content="Flutter Developer especializado en fintech. Billeteras digitales, microservicios, CI/CD." />
+  <meta property="og:image" content="https://rodrigo402.github.io/cv-web/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Rodrigo Reynoso" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rodrigo Reynoso — Flutter Developer" />
+  <meta name="twitter:description" content="Flutter Developer especializado en fintech. Billeteras digitales, microservicios, CI/CD." />
+  <meta name="twitter:image" content="https://rodrigo402.github.io/cv-web/og-image.png" />
+
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rodrigo Gabriel Reynoso",
+    "jobTitle": "Flutter Developer",
+    "description": "Flutter Developer especializado en aplicaciones fintech. Billeteras digitales white label, microservicios Laravel, CI/CD.",
+    "url": "https://rodrigo402.github.io/cv-web/",
+    "email": "mailto:rodrigo.gabriel.reynoso@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/rodrigo-gabriel-reynoso-00194a1b1/",
+      "https://github.com/rodrigo402"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Fe",
+      "addressCountry": "AR"
+    },
+    "knowsAbout": ["Flutter", "Dart", "Laravel", "PHP", "Vue.js", "MySQL", "CI/CD", "Fintech", "Mobile Development"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/cv-web/favicon.ico" />
+
+  <!-- No-flash theme init -->
   <script>
     (function () {
-      const t = localStorage.getItem('theme') || 'dark';
+      var saved = localStorage.getItem('theme');
+      var t = (saved === 'dark' || saved === 'light')
+        ? saved
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/cv-web/assets/index-CsDNiWwm.js"></script>
-  <link rel="stylesheet" crossorigin href="/cv-web/assets/index-DYuZkgkA.css">
+  <script type="module" crossorigin src="/cv-web/assets/main-tn6GZube.js"></script>
+  <link rel="modulepreload" crossorigin href="/cv-web/assets/cv-DoBrL-iq.js">
+  <link rel="stylesheet" crossorigin href="/cv-web/assets/main-B1-OQn_t.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
   <div id="app"></div>
 </body>
 </html>
