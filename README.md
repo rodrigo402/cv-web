@@ -1,27 +1,53 @@
-# CvWeb
+# Rodrigo Gabriel Reynoso | Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+Portfolio profesional desarrollado con Vue 3 + Vite + TypeScript para presentar mi experiencia como Flutter & Full Stack Developer especializado en productos Fintech, aplicaciones mobile y soluciones White Label.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **Portfolio:** https://rodrigo402.github.io/cv-web/
+- **LinkedIn:** https://www.linkedin.com/in/rodrigo-gabriel-reynoso-00194a1b1/
+- **GitHub:** https://github.com/rodrigo402
 
-## Code scaffolding
+## Tecnologías
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Vue 3
+- TypeScript
+- Vite
+- CSS moderno
+- GitHub Pages
+- GitHub Actions
 
-## Build
+## Características
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Portfolio responsive
+- Dark / Light mode
+- Timeline profesional
+- Experiencia laboral
+- Stack tecnológico
+- Proyectos destacados
+- Descarga de CV en PDF
+- SEO optimizado
+- Deploy automático con GitHub Actions
 
-## Running unit tests
+## Desarrollo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+npm run dev
+```
 
-## Running end-to-end tests
+## Generación del CV en PDF
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+npm run generate:cv
+```
 
-## Further help
+Genera `public/rodrigo-gabriel-reynoso-cv.pdf` usando Puppeteer a partir de la vista dedicada `/cv-print.html`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Build y deploy
+
+```bash
+npm run build
+```
+
+El deploy se ejecuta automáticamente vía GitHub Actions al hacer push a `master`.
