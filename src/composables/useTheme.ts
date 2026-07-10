@@ -2,7 +2,13 @@ import { ref, watchEffect } from 'vue'
 
 type Theme = 'dark' | 'light'
 
-const theme = ref<Theme>((localStorage.getItem('theme') as Theme) ?? 'dark')
+function getInitialTheme(): Theme {
+  const saved = localStorage.getItem('theme') as Theme | null
+  if (saved === 'dark' || saved === 'light') return saved
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+const theme = ref<Theme>(getInitialTheme())
 
 watchEffect(() => {
   document.documentElement.setAttribute('data-theme', theme.value)

@@ -1,8 +1,27 @@
 export interface ExperienceItem {
-  period: string
+  company: string
   role: string
-  description: string
+  period: string
+  location: string
+  current?: boolean
+  summary?: string
+  points: string[]
   tags: string[]
+}
+
+export interface ProjectCase {
+  title: string
+  context: string
+  solution: string
+  role: string
+  stack: string[]
+  impact: string
+}
+
+export interface SkillCategory {
+  name: string
+  icon: string
+  skills: string[]
 }
 
 export interface EducationItem {
@@ -10,24 +29,9 @@ export interface EducationItem {
   degree: string
   period: string
   location: string
-  items: string[]
 }
 
 export interface CourseItem {
   title: string
   provider: string
-  items: string[]
-}
-
-export interface ProjectItem {
-  title: string
-  image: string
-  url: string
-  tags: string[]
-}
-
-export interface SkillGroup {
-  category: string
-  icon: string
-  items: string[]
 }
