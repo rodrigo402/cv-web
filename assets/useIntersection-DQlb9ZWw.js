@@ -1,0 +1,1 @@
+import{k as o,l as u,m as s}from"./index-CsDNiWwm.js";function a(i=.12){const e=s(null),t=s(!1);let n=null;return o(()=>{n=new IntersectionObserver(([l])=>{l.isIntersecting&&(t.value=!0,n==null||n.disconnect())},{threshold:i}),e.value&&n.observe(e.value)}),u(()=>n==null?void 0:n.disconnect()),{el:e,visible:t}}export{a as u};
