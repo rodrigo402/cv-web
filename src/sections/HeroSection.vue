@@ -187,7 +187,9 @@ function scrollTo(id: string) {
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, var(--accent), rgba(139, 92, 246, 0.1) 60%, var(--accent-3));
-  box-shadow: var(--accent-glow);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18),
+    var(--accent-glow);
   animation: float 6s ease-in-out infinite;
 }
 
@@ -196,7 +198,13 @@ function scrollTo(id: string) {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--bg);
+  object-position: center 18%;
+  border: 3px solid #fff;
+  display: block;
+}
+
+[data-theme='dark'] .photo {
+  border-color: var(--bg);
 }
 
 .photo-chip {

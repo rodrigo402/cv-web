@@ -14,7 +14,7 @@ export const profile = {
   github: 'https://github.com/rodrigo402',
   githubHandle: 'rodrigo402',
   linkedin: 'https://www.linkedin.com/in/rodrigo-gabriel-reynoso-00194a1b1/',
-  photo: `${BASE}img/fotoperfil.jpg`,
+  photo: `${BASE}img/profile/rodrigo-reynoso-2026.jpg`,
   cvPdf: `${BASE}rodrigo-reynoso-cv.pdf`,
   available: true,
 }
